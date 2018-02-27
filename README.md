@@ -1,5 +1,5 @@
 # setaudio
-A simple launchd plist to set a usb audio device output, automatically, when the device is attached. This plist makes use of x's handy utility `audiodevice`. This can solve the problem of a Mac laptop staying on internal speaker output, even when docked.
+A simple launchd plist to set a usb audio device output, automatically, when the device is attached. This plist makes use of whosawhatsis's handy utility [audiodevice](http://whoshacks.blogspot.com/2009/01/change-audio-devices-via-shell-script.html). This can solve the problem of a Mac laptop staying on internal speaker output, even when docked.
 
 ## Customization
 
