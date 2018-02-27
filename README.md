@@ -23,4 +23,4 @@ Once you're certain you have the right values in the plist, you're ready to inst
 
 ## Use
 
-The program should now run automatically in the background when your audio device is plugged in.
+The program should now run automatically in the background when your audio device is plugged in. To disable, run `launchctl unload ~/Library/LaunchAgents/com.eoban.setaudio.plist` .
