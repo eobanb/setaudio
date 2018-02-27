@@ -7,9 +7,9 @@ By default, this is set up for detecting an [Elgato Thunderbolt 3 dock](https://
 
 1. Change the last `ProgramArguments` string (specifically, the last argument of the `audiodevice` program) to match the exact name of the audio output you want to use. In my case it's **Elgato Dock** (note that this is the name given to the device by the Elgato Dock utility; if you own this dock but haven't installed the utility, the name is **USB Audio CODEC**). Also remember to escape spaces with a backslash (as in `Elgato\ Dock`)
 
-2. Change the `idProduct` and `idVendor` integers to match the device. This can be found in the **System Information** app, under USB.
+2. Change the `idProduct` and `idVendor` integers to match the device. This can be found in the **System Information** app, under USB (or, `ioreg -p IOUSB` in Terminal).
 
-3. Change the `IOProviderClass` string to match the device. This can be found by running `iousb` in Terminal. For the Elgato dock it's `AppleUSBDevice` but yours may be different.
+3. Change the `IOProviderClass` string to match the device. This can also be found by running `ioreg -p IOUSB` in Terminal. For the Elgato dock it's `AppleUSBDevice` but yours may be different.
 
 Once you're certain you have the right values in the plist, you're ready to install.
 
